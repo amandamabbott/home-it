@@ -4,7 +4,7 @@ This repo tracks the progress of my home IT server that runs on a Raspberry Pi 4
 
 # Getting started
 
-In order to get started with this project, a few tools are required on the host system.
+In order to get started with this project, a few tools are required on the control node.
 This README assumes you are using a Mac OS X system as the control node.
 
 > Note: see the Wiki for information on getting started on Linux systems.
