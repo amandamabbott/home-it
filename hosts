@@ -1,0 +1,4 @@
+[home_it]
+
+# My Raspberry Pi 4B running the 32-bit version of Raspberry Pi OS.
+10.0.0.135 ansible_user=pi ansible_port=6040 ansible_python_interpreter=/usr/bin/python3
