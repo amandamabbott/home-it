@@ -21,8 +21,25 @@ $ brew install python3
 $ brew install pipenv
 ```
 
-Now install the project dependencies, like so:
+Pipenv uses the `Pipfile` and `Pipfile.lock` files to track dependencies. Install the
+project dependencies, like so:
 
 ```bash
+$ cd home-it
 $ pipenv install
+```
+
+## Test the connection via an Ansible ad-hoc command
+
+Ansible connects to managed nodes via SSH. Load your SSH private key into `ssh-agent` by
+running the following command:
+
+```bash
+$ ssh-add ~/.ssh/id_rsa
+```
+
+Ping the managed node (the Raspberry Pi 4B) to verify the connection:
+
+```bash
+$ pipenv run ansible home_it -m ping
 ```
