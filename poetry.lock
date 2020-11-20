@@ -1,13 +1,13 @@
 [[package]]
 name = "ansible"
-version = "2.10.0"
+version = "2.10.3"
 description = "Radically simple IT automation"
 category = "main"
 optional = false
 python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*"
 
 [package.dependencies]
-ansible-base = ">=2.10.1,<2.11"
+ansible-base = ">=2.10.3,<2.11"
 
 [[package]]
 name = "ansible-base"
@@ -121,12 +121,12 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [metadata]
 lock-version = "1.1"
-python-versions = "3.8.5"
-content-hash = "0f5040436b36f946589aa487084d12eedb61f522f0cf6ee8c50a8d44a83101e1"
+python-versions = "3.8"
+content-hash = "2a6a2adb0ee12078475bc78286f7ce34432fd85591dd31e32fa72bb6e87bba49"
 
 [metadata.files]
 ansible = [
-    {file = "ansible-2.10.0.tar.gz", hash = "sha256:3aadd662ac3f04e46054c99cfe533a92ba33d97982f19e49f01dbe137f31d346"},
+    {file = "ansible-2.10.3.tar.gz", hash = "sha256:eb1d08b9b98a60e90e7123a12f40770780f29f9d73168da55d449106a9f4d348"},
 ]
 ansible-base = [
     {file = "ansible-base-2.10.3.tar.gz", hash = "sha256:35a208726b10fecbcf00c263ae4572b48f505b5796fb77a85c3e9c1036ea5e4f"},
