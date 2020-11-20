@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "home-it"
+version = "0.1.0"
+description = "My home IT project"
+authors = ["Amanda M. Abbott <amandaabbott96@yahoo.com>"]
+
+[tool.poetry.dependencies]
+python = "3.8"
+ansible = "*"
+
+[tool.poetry.dev-dependencies]
+grip = "^4.5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

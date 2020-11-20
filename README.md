@@ -9,24 +9,31 @@ This README assumes you are using a Mac OS X system as the control node.
 
 > Note: see the Wiki for information on getting started on Linux systems.
 
-## virtualenv
+## Python 3
 
-This project uses Pipenv to track some of its dependencies,
-
-On Mac OS X, it's recommended to manage your tools with Homebrew. Run the following
-commands to install Pipenv:
+On Mac OS X, it's recommended to install Python 3 using Homebrew, like so:
 
 ```bash
 $ brew install python3
-$ brew install pipenv
 ```
 
-Pipenv uses the `Pipfile` and `Pipfile.lock` files to track dependencies. Install the
+## virtualenv
+
+This project uses [Poetry](https://github.com/python-poetry/poetry) to manage its Python
+dependencies,
+
+On Mac OS X, it's recommended to install Poetry by running the following command:
+
+```bash
+$ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+```
+
+Poetry uses the `pyproject.toml` and `poetry.lock` files to track dependencies. Install the
 project dependencies, like so:
 
 ```bash
 $ cd home-it
-$ pipenv install
+$ poetry install
 ```
 
 ## Test the connection via an Ansible ad-hoc command
@@ -41,5 +48,5 @@ $ ssh-add ~/.ssh/id_rsa
 Ping the managed node (the Raspberry Pi 4B) to verify the connection:
 
 ```bash
-$ pipenv run ansible home_it -m ping
+$ poetry run ansible home_it -m ping
 ```
